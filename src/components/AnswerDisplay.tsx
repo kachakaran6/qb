@@ -37,16 +37,9 @@ const AnswerDisplay: React.FC<AnswerDisplayProps> = ({
     );
   }
 
-  // Calculate progress percentage based on question position
-  // const currentQuestionNumber = hasPrevious
-  //   ? hasNext
-  //     ? "middle"
-  //     : "last"
-  //   : "first";
-  // const progress = hasPrevious ? (hasNext ? 50 : 100) : 0;
-
   return (
-    <div className="bg-white rounded-xl shadow-sm overflow-hidden h-full border border-slate-200 flex flex-col">
+    <div className="bg-white rounded-xl shadow-sm overflow-hidden border border-slate-200 flex flex-col max-h-screen sm:max-h-[600px]">
+      {/* Header */}
       <div className="bg-gradient-to-r from-black via-purple-800 to-indigo-900 px-4 py-3 flex items-center">
         {isMobile && (
           <button
@@ -59,32 +52,19 @@ const AnswerDisplay: React.FC<AnswerDisplayProps> = ({
         <h2 className="text-lg font-semibold text-white flex-1">Answer</h2>
       </div>
 
-      {/* Progress bar */}
-      {/* <div className="bg-slate-100 h-2">
-        <div 
-          className="h-full bg-gradient-to-r from-blue-500 to-indigo-500 transition-all duration-300 ease-out"
-          style={{ width: `${progress}%` }}
-        />
-      </div> */}
-
-      <div className="p-6 flex-1 overflow-auto">
+      {/* Content Area */}
+      <div className="p-6 flex-1 overflow-auto max-h-[calc(100vh-200px)] sm:max-h-[calc(600px-100px)]">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-xl font-semibold text-slate-900">
-            {question.text}
+            Q. {question.text}
           </h3>
-          {/* <span className="text-sm font-medium text-slate-500">
-            {currentQuestionNumber === "first"
-              ? "First Question"
-              : currentQuestionNumber === "last"
-              ? "Last Question"
-              : "Question Progress"}
-          </span> */}
         </div>
         <div className="prose prose-slate max-w-none">
           <p>{question.answer}</p>
         </div>
       </div>
 
+      {/* Navigation Buttons */}
       <div className="border-t border-slate-200 px-4 py-3 bg-slate-50 flex justify-between items-center">
         <button
           onClick={onPrevious}
