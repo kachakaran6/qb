@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center">
             <BookOpen className="h-8 w-8 text-white" />
             <h1 className="ml-3 text-2xl font-bold text-white">
-              Question<span className="text-blue-200">Bank</span>
+              Qu<span className="text-blue-200">rius</span>
             </h1>
           </div>
 
