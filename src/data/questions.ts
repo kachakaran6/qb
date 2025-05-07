@@ -900,6 +900,1445 @@ export const subjects: Subject[] = [
         answer:
           "Static web content refers to resources that do not change in response to user requests or inputs. These are typically HTML, CSS, JavaScript, and image files that are served as-is by the web server. Static content remains the same for all users and does not require any processing by the server before being sent to the client. Dynamic web content, on the other hand, is generated on the fly by the server based on user input, application logic, or other factors. Servlets are responsible for generating dynamic content by processing requests, executing business logic, and producing an appropriate response. For example, a servlet can generate HTML dynamically based on database queries or user preferences. Unlike static content, dynamic content is not pre-defined and can change depending on the user’s session, input, or other runtime conditions. The main advantage of static content is speed and simplicity, as it does not require server-side processing. However, dynamic content is essential for interactive web applications, as it allows for real-time data generation and customized user experiences. Servlets are commonly used to create dynamic web content by responding to user actions with personalized or context-specific data.",
       },
+      {
+        id: "server-1",
+        text: "Distinguish between static and dynamic web content in servlets.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "Static content remains the same for all users (e.g., HTML), while dynamic content is generated on the server-side and can change based on user input or logic.",
+      },
+      {
+        id: "jsp-1",
+        text: "What is JSP?",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "JSP (JavaServer Pages) is a server-side technology that enables the creation of dynamic web content using Java within HTML pages.",
+      },
+      {
+        id: "jsp-2",
+        text: "Define scriptlet tag.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "A scriptlet tag (<% ... %>) is used to embed Java code inside a JSP page.",
+      },
+      {
+        id: "jsp-3",
+        text: "What is the use of the expression tag in JSP?",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "The expression tag (<%= ... %>) evaluates and outputs the result of a Java expression.",
+      },
+      {
+        id: "jsp-4",
+        text: "List JSP implicit objects.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "JSP implicit objects include request, response, out, session, application, config, page, pageContext, and exception.",
+      },
+      {
+        id: "jsp-5",
+        text: "What is the out object used for?",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "The out object is used to send content to the client's browser in JSP.",
+      },
+      {
+        id: "jsp-6",
+        text: "Define JSP declaration tag.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "JSP declaration tag (<%! ... %>) is used to declare variables and methods in a JSP page.",
+      },
+      {
+        id: "jsp-7",
+        text: "What is the use of the request object?",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "The request object provides information about the client request, such as form data and request headers.",
+      },
+      {
+        id: "jsp-8",
+        text: "List any three core JSTL tags.",
+        level: "one liner",
+        unit: "3",
+        answer: "Three core JSTL tags are <c:if>, <c:forEach>, and <c:out>.",
+      },
+      {
+        id: "jsp-9",
+        text: "What is Expression Language (EL)?",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "Expression Language (EL) is used to access data stored in JavaBeans and implicit objects in JSP.",
+      },
+      {
+        id: "jsp-10",
+        text: "Define a JavaBean.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "A JavaBean is a reusable Java class that follows conventions and is used for encapsulating data.",
+      },
+      {
+        id: "jsp-11",
+        text: "What is the pageContext object?",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "The pageContext object provides access to various namespaces and allows data sharing among JSP components.",
+      },
+      {
+        id: "jsp-12",
+        text: "Define Tag Library Descriptor (TLD).",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "A TLD file describes the tags in a custom tag library used in JSP pages.",
+      },
+      {
+        id: "jsp-13",
+        text: "What is the session object used for?",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "The session object stores user-specific information across multiple requests.",
+      },
+      {
+        id: "jsp-14",
+        text: "What does the <c:out> tag do?",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "The <c:out> tag in JSTL is used to display the result of an expression, escaping HTML/XML characters.",
+      },
+      {
+        id: "jsp-15",
+        text: "Define JSTL.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "JSTL (JavaServer Pages Standard Tag Library) is a collection of standard tags for JSP development.",
+      },
+      {
+        id: "jsp-16",
+        text: "What is the purpose of <c:forEach>?",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "The <c:forEach> tag is used to iterate over a collection or array in JSP.",
+      },
+      {
+        id: "jsp-17",
+        text: "What is a custom tag in JSP?",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "A custom tag is a user-defined tag created using a tag handler class and TLD file.",
+      },
+      {
+        id: "jsp-18",
+        text: "Define the application implicit object.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "The application object is used to share data across all users and pages in a web application.",
+      },
+      {
+        id: "jsp-19",
+        text: "What is the purpose of the response object?",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "The response object is used to send data back to the client, such as HTML content or redirects.",
+      },
+      {
+        id: "jsp-20",
+        text: "Name any one JSP directive.",
+        level: "one liner",
+        unit: "3",
+        answer: "The page directive is one example of a JSP directive.",
+      },
+      {
+        id: "jsp-21",
+        text: "Explain the need for JSP when servlets already exist.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "JSP simplifies the creation of dynamic web pages by allowing HTML to be written directly with embedded Java, making it easier to maintain and design compared to servlets.",
+      },
+      {
+        id: "jsp-22",
+        text: "Describe the advantages of JSP over servlets.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "JSP allows mixing HTML with Java code, provides implicit objects, supports tag libraries, separates business logic from presentation, and simplifies web UI development compared to servlets.",
+      },
+      {
+        id: "jsp-23",
+        text: "Explain the lifecycle of a JSP page.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "The JSP lifecycle includes: translation to servlet, compilation, initialization (jspInit), request processing (_jspService), and destruction (jspDestroy).",
+      },
+      {
+        id: "jsp-24",
+        text: "Discuss how the expression tag works in JSP.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "The expression tag evaluates a Java expression and outputs its value to the client. It’s enclosed in <%= %> and is evaluated at request time.",
+      },
+      {
+        id: "jsp-25",
+        text: "Describe the role of JSP implicit objects with examples.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "Implicit objects like request, response, session, out, etc., simplify access to request data, response handling, session management, and output generation. For example, 'request.getParameter(\"name\")' gets user input.",
+      },
+      {
+        id: "jsp-26",
+        text: "Explain the difference between scriptlet and declaration tags.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "Scriptlet tag (<% ... %>) adds code to _jspService(), while declaration tag (<%! ... %>) declares methods/variables outside the method for broader scope in the JSP.",
+      },
+      {
+        id: "jsp-27",
+        text: "Illustrate how to use a JavaBean in a JSP page.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          'Use <jsp:useBean> to instantiate, <jsp:setProperty> to set, and <jsp:getProperty> to retrieve values from the bean. Example: <jsp:useBean id="user" class="com.UserBean" />',
+      },
+      {
+        id: "jsp-28",
+        text: "Describe the use of EL for accessing scoped variables.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "EL simplifies access to scoped variables like ${user.name}, automatically searching through page, request, session, and application scopes.",
+      },
+      {
+        id: "jsp-29",
+        text: "Explain the use of <c:if> and <c:choose> tags.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "<c:if> is used for conditional processing; <c:choose> is used as a switch-case alternative with <c:when> and <c:otherwise> for multiple conditions.",
+      },
+      {
+        id: "jsp-30",
+        text: "Discuss the structure of a tag library descriptor file.",
+        level: "one liner",
+        unit: "3",
+        answer:
+          "A TLD file uses XML format and includes taglib version, URI, and individual <tag> entries defining tag name, handler class, and attributes.",
+      },
+      {
+        id: "jsp-31",
+        text: "Create a JSP page using a scriptlet to display current date and time.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Use a scriptlet with java.util.Date inside <% %> tags to print the current date and time using out.println().",
+      },
+      {
+        id: "jsp-32",
+        text: "Use the expression tag to perform arithmetic operations.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "The expression tag <%= %> can evaluate expressions like <%= 5 + 3 %> directly and display the result in HTML.",
+      },
+      {
+        id: "jsp-33",
+        text: "Create a JSP page using <c:forEach> to iterate over an array.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Declare an array in a scoped attribute, then use <c:forEach var='item' items='${array}'> to loop through it.",
+      },
+      {
+        id: "jsp-34",
+        text: "Implement session tracking using the session object.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Store user data in session using session.setAttribute(), then retrieve it using session.getAttribute() across pages.",
+      },
+      {
+        id: "jsp-35",
+        text: "Use a JavaBean to store and retrieve user profile data.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Use <jsp:useBean>, <jsp:setProperty>, and <jsp:getProperty> to interact with a JavaBean class holding user profile data.",
+      },
+      {
+        id: "jsp-36",
+        text: "Apply EL to display values from request attributes.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Store a value using request.setAttribute(), then access it in JSP using ${attributeName}.",
+      },
+      {
+        id: "jsp-37",
+        text: "Write a JSP page using <c:choose> and <c:when>.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Use <c:choose> with multiple <c:when test='...'> blocks and an optional <c:otherwise> to handle conditional logic.",
+      },
+      {
+        id: "jsp-38",
+        text: "Include header and footer in a JSP using the include directive.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Use <%@ include file='header.jsp' %> and <%@ include file='footer.jsp' %> to insert static content.",
+      },
+      {
+        id: "jsp-39",
+        text: "Use <c:import> to load content from another URL.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "The <c:import url='external.jsp' /> tag can be used to load and display content from another JSP or web resource.",
+      },
+      {
+        id: "jsp-40",
+        text: "Write a JSP page using <c:catch> for exception handling.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Use <c:catch var='error'> around code that might throw an exception, then display ${error} if needed.",
+      },
+      {
+        id: "jsp-41",
+        text: "Compare JSP scriptlets and EL in terms of maintainability.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Scriptlets mix Java code with HTML, making code less maintainable, whereas EL offers cleaner syntax and better separation of concerns.",
+      },
+      {
+        id: "jsp-42",
+        text: "Analyze the flow of execution in a JSP lifecycle.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "The JSP lifecycle includes translation to a servlet, compilation, loading, instantiation, initialization, execution, and destruction.",
+      },
+      {
+        id: "jsp-43",
+        text: "Distinguish between directive and action tags.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Directive tags configure JSP page settings (e.g., include files), while action tags control dynamic behavior at runtime.",
+      },
+      {
+        id: "jsp-44",
+        text: "Compare JSTL core tags and custom tags.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "JSTL core tags are standard and reusable, while custom tags allow developers to encapsulate complex functionality for specific needs.",
+      },
+      {
+        id: "jsp-45",
+        text: "Evaluate pros and cons of using JavaBeans in JSP.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "JavaBeans promote modular design and code reuse but can add complexity and require proper configuration and scope handling.",
+      },
+      {
+        id: "jsp-46",
+        text: "Examine scope attributes in JSP (page, request, session, application).",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Each scope defines object visibility: page (current page), request (one request), session (one user session), application (all users).",
+      },
+      {
+        id: "jsp-47",
+        text: "Analyze how implicit objects simplify coding in JSP.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Implicit objects like request, response, session reduce boilerplate code and provide access to essential web components.",
+      },
+      {
+        id: "jsp-48",
+        text: "Identify common errors when using EL in JSP.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "Common EL issues include null pointer exceptions, wrong scope access, and syntax errors like missing braces or invalid paths.",
+      },
+      {
+        id: "jsp-49",
+        text: "Break down the use of JSP directives in page configuration.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "JSP directives like page, include, and taglib control compilation settings, file inclusion, and tag library usage.",
+      },
+      {
+        id: "jsp-50",
+        text: "Analyze the use of pageContext to access scoped attributes.",
+        level: "two liner",
+        unit: "3",
+        answer:
+          "The pageContext object allows unified access to all scope levels, simplifying attribute management in JSP pages.",
+      },
+      {
+        id: "jsp-51",
+        text: "Evaluate the benefits of using JSTL over traditional scripting in JSP.",
+        level: "big answer",
+        unit: "3",
+        answer:
+          "JSTL (JavaServer Pages Standard Tag Library) provides a cleaner, more readable, and maintainable alternative to traditional Java scripting in JSP pages. Unlike scriptlets that embed Java code directly into HTML, JSTL separates presentation from business logic using standardized tags. This allows developers to write logic such as loops, conditionals, and formatting using declarative tags rather than imperative Java code. As a result, JSTL helps enforce the MVC (Model-View-Controller) design pattern, leading to cleaner code that is easier to debug, maintain, and hand off to front-end developers who may not be familiar with Java. JSTL also improves security and readability by reducing direct manipulation of objects in the view layer.",
+      },
+      {
+        id: "jsp-52",
+        text: "Justify the use of custom tags in large web applications.",
+        level: "big answer",
+        unit: "3",
+        answer:
+          "Custom tags in JSP allow developers to encapsulate reusable logic and UI components, making them highly beneficial for large web applications. By defining custom tags, teams can create consistent and modular features, such as form validation, UI widgets, or session handling, without duplicating code across multiple JSPs. These tags are defined in tag handler classes or tag files, promoting reusability and separation of concerns. Custom tags also support parameters, attributes, and body content, offering flexibility in how they're used. In enterprise-scale applications, this helps maintain a clean architecture and reduces the risk of errors due to repeated logic. They enhance maintainability, readability, and scalability, especially when multiple developers are collaborating.",
+      },
+      {
+        id: "jsp-53",
+        text: "Critique the use of scriptlets in modern JSP development.",
+        level: "big answer",
+        unit: "3",
+        answer:
+          "Scriptlets, once common in early JSP development, are now considered outdated and discouraged in modern web development. Embedding Java code directly in JSP pages mixes business logic with presentation, leading to cluttered and hard-to-maintain codebases. This tightly coupled structure violates the MVC principle and makes the application less modular. Moreover, debugging scriptlet-heavy JSPs is difficult, as they are compiled into servlets at runtime, and errors may not be immediately visible. With the advent of JSTL, EL, and MVC frameworks like Spring MVC, scriptlets have become obsolete. Modern best practices emphasize the use of tag libraries, JavaBeans, and backend controllers to handle logic, keeping JSPs clean and focused solely on presentation.",
+      },
+      {
+        id: "jsp-54",
+        text: "Compare EL and scriptlets for readability and debugging.",
+        level: "big answer",
+        unit: "3",
+        answer:
+          "Expression Language (EL) and scriptlets serve different purposes but can both be used to display or process data in JSP. EL provides a concise and readable syntax (e.g., ${user.name}) to access scoped attributes, making JSP pages easier to read and maintain, especially for front-end developers. In contrast, scriptlets embed Java code (e.g., <% out.println(user.getName()); %>) directly into HTML, which can clutter the view layer and obscure logic. From a debugging perspective, EL is simpler and less error-prone for basic data access but limited for complex operations. Scriptlets offer more power but at the cost of readability and separation of concerns. Overall, EL is preferred for cleaner, maintainable JSP pages.",
+      },
+      {
+        id: "jsp-55",
+        text: "Assess performance issues in JSP-heavy applications.",
+        level: "big answer",
+        unit: "3",
+        answer:
+          "JSP-heavy applications can suffer from several performance bottlenecks if not designed carefully. Excessive use of dynamic content generation, large files, scriptlets, and improper resource handling can lead to slow response times and memory issues. Repeated access to databases from JSPs without caching or pooling can degrade server performance. Including business logic within JSPs also makes it difficult to optimize performance since the view and logic layers are tightly coupled. Poorly managed sessions and unoptimized loops or conditional statements using JSTL or scriptlets can further contribute to latency. To mitigate these issues, it's advisable to offload business logic to servlets or backend controllers, use caching strategies, and minimize expensive operations in JSP.",
+      },
+      {
+        id: "jsp-56",
+        text: "Evaluate using JavaBeans vs direct scriptlet logic.",
+        level: "big answer",
+        unit: "3",
+        answer:
+          "Using JavaBeans over scriptlet logic in JSP provides significant advantages in terms of structure, readability, and maintainability. JavaBeans promote modular programming by encapsulating business logic and data in reusable classes with standard getter and setter methods. JSP pages can access these beans declaratively using <jsp:useBean>, <jsp:getProperty>, and <jsp:setProperty> tags, allowing for a clear separation between presentation and logic. Scriptlets, on the other hand, embed Java code directly in HTML, leading to spaghetti code that is harder to maintain. JavaBeans are also easier to test and debug since the logic is isolated from the view layer. Overall, JavaBeans encourage MVC architecture and improve code quality in web applications.",
+      },
+      {
+        id: "jsp-57",
+        text: "Review security concerns in JSP data handling.",
+        level: "big answer",
+        unit: "3",
+        answer:
+          "Security is a critical aspect of JSP-based applications, particularly in how data is handled and displayed. One major concern is exposure to Cross-Site Scripting (XSS) if user input is displayed without proper encoding. Scriptlets increase this risk by allowing unfiltered data output. Input validation and output escaping must be enforced, preferably using JSTL or EL, which limit direct code execution. Another concern is improper session handling, which can lead to session hijacking. Using HTTPS, secure cookies, and proper timeout mechanisms are essential. Additionally, direct database access or business logic in JSPs increases the attack surface. Following best practices such as input sanitization, session management, and MVC separation enhances security.",
+      },
+      {
+        id: "jsp-58",
+        text: "Appraise maintainability of JSP-based applications.",
+        level: "big answer",
+        unit: "3",
+        answer:
+          "Maintainability of JSP-based applications depends heavily on how the application is structured. Applications that rely on scriptlets and mix business logic with presentation are difficult to maintain, especially as they scale. However, using JSP in conjunction with JavaBeans, JSTL, EL, and MVC frameworks like Spring MVC greatly improves maintainability. Reusable components, separation of logic from views, and standardized tag libraries make the application more modular and easier to understand. Proper documentation, consistent naming conventions, and layered architecture also contribute to better maintainability. While JSP can serve as a solid view technology, it should be used with best practices to ensure long-term maintainability and collaboration among development teams.",
+      },
+      {
+        id: "jsp-59",
+        text: "Judge reusability of JSTL custom tags in enterprise projects.",
+        level: "big answer",
+        unit: "3",
+        answer:
+          "JSTL custom tags offer high reusability, making them particularly valuable in enterprise-scale projects. By encapsulating repetitive logic—such as formatting, looping, conditionals, or even custom functionality like pagination or UI components—developers can reuse the same tag across multiple JSP pages. This reduces code duplication, improves consistency, and simplifies maintenance. Custom tags are defined in Tag Library Descriptor (TLD) files and are highly configurable via attributes. They help enforce coding standards and support modular design by abstracting complex logic from JSPs. Overall, custom tags enhance productivity and maintainability, especially in large teams and long-term projects where consistency and reuse are critical to success.",
+      },
+      {
+        id: "jsp-60",
+        text: "Evaluate best practices for separating logic and presentation in JSP.",
+        level: "big answer",
+        unit: "3",
+        answer:
+          "Separating logic and presentation is essential for building clean, maintainable JSP applications. Best practices include avoiding scriptlets entirely and using JSTL, EL, and custom tags for handling display logic. Business logic should reside in JavaBeans, servlets, or controllers in an MVC framework. JSPs should focus solely on rendering the UI using data provided through request, session, or application scopes. Using the include directive to modularize headers, footers, and navigation menus further supports maintainability. Proper use of expression language (EL) allows data to be accessed without cluttering JSP files with Java code. These practices promote modularity, scalability, and collaboration between developers and designers, ensuring a robust web application architecture.",
+      },
+      {
+        id: "java-web-services-1",
+        text: "What are web services?",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "Web services are standardized ways for applications to communicate over the web using XML, JSON, or HTTP protocols.",
+      },
+      {
+        id: "java-web-services-2",
+        text: "Define SOAP.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "SOAP (Simple Object Access Protocol) is a protocol for exchanging structured information in web services using XML.",
+      },
+      {
+        id: "java-web-services-3",
+        text: "What is REST?",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "REST (Representational State Transfer) is an architectural style for designing networked applications using stateless HTTP requests.",
+      },
+      {
+        id: "java-web-services-4",
+        text: "List types of web services.",
+        unit: "4",
+        level: "one liner",
+        answer: "The main types are SOAP-based and RESTful web services.",
+      },
+      {
+        id: "java-web-services-5",
+        text: "What is JAX-RS?",
+        unit: "4",
+        level: "one liner",
+        answer: "JAX-RS is a Java API for creating RESTful web services.",
+      },
+      {
+        id: "java-web-services-6",
+        text: "Define PathParam.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "PathParam is used to extract values from the URI path in JAX-RS.",
+      },
+      {
+        id: "java-web-services-7",
+        text: "What is QueryParam used for?",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "QueryParam extracts query string parameters from the URL in RESTful services.",
+      },
+      {
+        id: "java-web-services-8",
+        text: "Define FormParam.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "FormParam extracts form data submitted via POST requests in JAX-RS.",
+      },
+      {
+        id: "java-web-services-9",
+        text: "What is the Jersey framework?",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "Jersey is a reference implementation of JAX-RS used to build RESTful web services in Java.",
+      },
+      {
+        id: "java-web-services-10",
+        text: "What is URI matching?",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "URI matching is the process of matching client requests to server resource methods based on the URL pattern.",
+      },
+      {
+        id: "java-web-services-11",
+        text: "List any two HTTP methods.",
+        unit: "4",
+        level: "one liner",
+        answer: "GET and POST are two common HTTP methods.",
+      },
+      {
+        id: "java-web-services-12",
+        text: "What is a server response?",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "A server response is the reply sent by the server to the client, including status codes and data.",
+      },
+      {
+        id: "java-web-services-13",
+        text: "Define RESTful web service.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "A RESTful web service uses HTTP methods to perform CRUD operations on resources identified by URIs.",
+      },
+      {
+        id: "java-web-services-14",
+        text: "What is the difference between PUT and POST?",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "PUT updates or replaces a resource, while POST creates a new resource.",
+      },
+      {
+        id: "java-web-services-15",
+        text: "Define WSDL.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "WSDL (Web Services Description Language) describes the operations and messages of a SOAP web service.",
+      },
+      {
+        id: "java-web-services-16",
+        text: "What does XML stand for?",
+        unit: "4",
+        level: "one liner",
+        answer: "XML stands for Extensible Markup Language.",
+      },
+      {
+        id: "java-web-services-17",
+        text: "List features of RESTful services.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "RESTful services are stateless, cacheable, and use standard HTTP methods and URIs.",
+      },
+      {
+        id: "java-web-services-18",
+        text: "What is the full form of JAX-RS?",
+        unit: "4",
+        level: "one liner",
+        answer: "Java API for RESTful Web Services.",
+      },
+      {
+        id: "java-web-services-19",
+        text: "What is HTTP status code 200?",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "It means the request was successful and the server returned the expected response.",
+      },
+      {
+        id: "java-web-services-20",
+        text: "What is the use of Client API in web services?",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "Client API is used to create HTTP requests to consume web services from a client application.",
+      },
+      {
+        id: "java-web-services-21",
+        text: "Explain the architecture of web services.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "The architecture of web services involves three main components: the service provider, the service requester, and the service registry. The service provider hosts the web service, while the requester consumes it. The registry is an optional component that stores service descriptions for easy discovery by clients. SOAP and REST are two common protocols used in web service communication.",
+      },
+      {
+        id: "java-web-services-22",
+        text: "Differentiate between SOAP and REST.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "SOAP (Simple Object Access Protocol) is a protocol for exchanging structured information using XML and supports operations like security and transaction management. It is more rigid and standardized. REST (Representational State Transfer), on the other hand, is an architectural style for building web services using stateless HTTP methods (GET, POST, PUT, DELETE). REST is more flexible and lightweight, often using JSON as the data format.",
+      },
+      {
+        id: "java-web-services-23",
+        text: "Describe how RESTful web services work.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "RESTful web services work by defining resources that can be identified by URIs (Uniform Resource Identifiers). Clients interact with these resources using standard HTTP methods like GET, POST, PUT, and DELETE. Each HTTP method corresponds to a CRUD operation: GET retrieves data, POST creates data, PUT updates data, and DELETE removes data. REST is stateless, meaning each request from a client must contain all the information necessary for the server to process it.",
+      },
+      {
+        id: "java-web-services-24",
+        text: "Explain how URI matching is performed.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "URI matching in web services is the process of mapping an incoming client request to a specific method in the server’s code based on the URI of the request. JAX-RS uses annotations like @Path to define the URI template, where variables in the URI can be mapped to method parameters using annotations like @PathParam. This allows dynamic matching of client requests to server-side resource methods.",
+      },
+      {
+        id: "java-web-services-25",
+        text: "Describe the usage of FormParam in JAX-RS.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "In JAX-RS, the @FormParam annotation is used to extract form data from HTTP requests that use the POST method. This allows the server to access form parameters submitted by a client in a key-value format. FormParam is typically used in scenarios like handling user login or submitting a contact form, where data is sent as part of a form submission.",
+      },
+      {
+        id: "java-web-services-26",
+        text: "Discuss RESTful principles.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "RESTful principles include statelessness, where each request is independent; client-server separation, where the client and server are loosely coupled; uniform interface, meaning a consistent set of operations on resources; and the use of standard HTTP methods. Additionally, REST emphasizes resource-based interactions and the use of representations (like JSON or XML) for transferring data.",
+      },
+      {
+        id: "java-web-services-27",
+        text: "Explain how HTTP methods are mapped in REST.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "In REST, HTTP methods are mapped to CRUD operations. GET is used to retrieve data (read), POST is used to create new resources (create), PUT is used to update existing resources (update), and DELETE is used to remove resources (delete). These methods align with REST's principles of resource management and stateless interactions, allowing clients to perform operations on the server’s resources using standard HTTP verbs.",
+      },
+      {
+        id: "java-web-services-28",
+        text: "Describe the client-server interaction in web services.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "In web services, the client sends an HTTP request to the server, which processes the request and returns an HTTP response. The server may provide data or confirm the completion of an action. In SOAP web services, the client sends XML-based requests to the server, while in RESTful services, data can be exchanged in multiple formats like XML or JSON. The server processes the request, performs the necessary operations, and responds to the client with status information and the requested data.",
+      },
+      {
+        id: "java-web-services-29",
+        text: "Explain exception handling in web services.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "Exception handling in web services is crucial for ensuring robust and reliable communication. In RESTful services, exceptions can be handled using custom exception mappers that convert exceptions into HTTP responses with appropriate status codes. For example, a 404 Not Found status is returned if a requested resource doesn’t exist, or a 500 Internal Server Error if something goes wrong on the server. In SOAP, exceptions are often conveyed using the Fault element within the SOAP message.",
+      },
+      {
+        id: "java-web-services-30",
+        text: "Describe the configuration steps for Jersey.",
+        unit: "4",
+        level: "one liner",
+        answer:
+          "Configuring Jersey involves several steps: adding Jersey libraries to the project, configuring the web.xml file to map the servlet, defining the resource classes (with annotations like @Path), and setting up a resource configuration class. In this class, you can register providers (like message body readers or writers) and other components necessary for the web service. Finally, you need to deploy the application on a servlet container like Tomcat or Jetty.",
+      },
+      {
+        id: "java-web-services-31",
+        text: "Create a simple RESTful web service using Jersey.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "To create a simple RESTful web service using Jersey, first add the necessary Jersey dependencies to your project. Then, define a class with methods annotated with @Path and HTTP methods like @GET, @POST to handle requests.",
+      },
+      {
+        id: "java-web-services-32",
+        text: "Apply PathParam to extract parameters from URI.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "PathParam is used to extract values from the URI by annotating method parameters with @PathParam. This allows you to bind parts of the URI to variables for processing within the method.",
+      },
+      {
+        id: "java-web-services-33",
+        text: "Use QueryParam to retrieve search criteria.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "QueryParam extracts values from the query string in a URL. By using @QueryParam, you can bind query string values to method parameters, which helps in dynamic filtering or search operations.",
+      },
+      {
+        id: "java-web-services-34",
+        text: "Build a RESTful API for student data.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "A RESTful API for student data involves defining resources that handle student operations such as creating, retrieving, updating, or deleting student information. Use HTTP methods like GET, POST, PUT, and DELETE for these operations.",
+      },
+      {
+        id: "java-web-services-35",
+        text: "Use HTTP POST method in a RESTful service.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "The HTTP POST method is used to send data to the server to create or update resources. In a RESTful service, you define a POST method to accept data, typically in JSON format, and store it on the server.",
+      },
+      {
+        id: "java-web-services-36",
+        text: "Implement error handling in a RESTful service.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "Error handling in RESTful services can be managed by using exception mappers. These mappers catch specific exceptions and return the appropriate HTTP status code and message to the client.",
+      },
+      {
+        id: "java-web-services-37",
+        text: "Configure Jersey in a Java web application.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "To configure Jersey, add the necessary dependencies to your project and configure the application in web.xml. Also, register resources and providers in a ResourceConfig class for proper management by Jersey.",
+      },
+      {
+        id: "java-web-services-38",
+        text: "Develop a REST client using JAX-RS.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "A REST client in JAX-RS is created using the Client API, which allows you to send HTTP requests to a RESTful web service. You can configure the client, send requests, and process responses easily.",
+      },
+      {
+        id: "java-web-services-39",
+        text: "Apply FormParam to submit form data.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "FormParam in JAX-RS is used to bind form data submitted via HTTP POST to method parameters. You use @FormParam to extract data from form submissions, often used in HTML form-based applications.",
+      },
+      {
+        id: "java-web-services-40",
+        text: "Implement URI routing in a Jersey-based application.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "URI routing in Jersey is done by defining path templates with dynamic parts in your resources. You use annotations like @Path to define URL patterns that match specific routes and methods.",
+      },
+      {
+        id: "java-web-services-41",
+        text: "Analyze the role of HTTP methods in REST.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "HTTP methods like GET, POST, PUT, DELETE, and PATCH play a critical role in RESTful APIs by defining the type of operation on resources. GET retrieves data, POST creates, PUT updates, DELETE removes, and PATCH modifies data.",
+      },
+      {
+        id: "java-web-services-42",
+        text: "Compare RESTful services and traditional APIs.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "RESTful services are stateless, scalable, and lightweight, using standard HTTP methods and URIs. Traditional APIs often use more complex communication protocols like SOAP and may involve more overhead due to stateful connections.",
+      },
+      {
+        id: "java-web-services-43",
+        text: "Distinguish between PathParam and QueryParam.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "PathParam is used to extract values directly from the URL path, whereas QueryParam extracts values from the query string of the URL, typically used for filtering or pagination.",
+      },
+      {
+        id: "java-web-services-44",
+        text: "Evaluate REST in terms of scalability.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "REST is highly scalable due to its stateless nature, which allows servers to handle multiple requests without maintaining session information, thus enabling horizontal scaling and reducing server load.",
+      },
+      {
+        id: "java-web-services-45",
+        text: "Break down the components of a RESTful URI.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "A RESTful URI is composed of a base URL, resource path, and optional query parameters. The base URL defines the service endpoint, while the path represents specific resources, and query parameters refine data requests.",
+      },
+      {
+        id: "java-web-services-46",
+        text: "Compare client and server error responses.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "Client errors (4xx) indicate issues with the request, like bad syntax or missing parameters, while server errors (5xx) indicate problems on the server side, such as internal server failures or service unavailability.",
+      },
+      {
+        id: "java-web-services-47",
+        text: "Analyze the need for exception handling in web services.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "Exception handling in web services ensures that errors are managed and meaningful responses are returned to clients, preventing crashes and ensuring the stability and reliability of the service.",
+      },
+      {
+        id: "java-web-services-48",
+        text: "Identify common pitfalls in RESTful API design.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "Common pitfalls include improper use of HTTP methods, lack of versioning, failing to handle errors effectively, and designing APIs that are too complex or tightly coupled, which can affect scalability and maintainability.",
+      },
+      {
+        id: "java-web-services-49",
+        text: "Examine Jersey configuration files.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "Jersey configuration files, such as web.xml or ResourceConfig, allow the configuration of components like filters, exception mappers, and resources. They help manage the routing, dependency injection, and setup of the RESTful application.",
+      },
+      {
+        id: "java-web-services-50",
+        text: "Analyze RESTful web services using case scenarios.",
+        unit: "4",
+        level: "two liner",
+        answer:
+          "Analyzing RESTful web services through case scenarios involves examining real-world use cases to evaluate how the API handles various operations like CRUD, error handling, and scalability under different conditions.",
+      },
+      {
+        id: "java-web-services-51",
+        text: "Evaluate REST vs SOAP for enterprise applications.",
+        unit: "4",
+        level: "big answer",
+        answer:
+          "REST and SOAP each have their strengths in enterprise applications. SOAP is a protocol that offers a strict specification for messaging and is known for its robust security features, making it suitable for complex enterprise systems that require transactions, security, and ACID compliance. It supports WS-* standards, offering features like message security, transactions, and reliable messaging. On the other hand, REST is an architectural style that is simpler, lightweight, and more flexible. REST leverages HTTP protocols, making it easier to integrate and scale in modern cloud-based and web applications. It uses standard HTTP methods (GET, POST, PUT, DELETE), is stateless, and allows better performance due to less overhead. REST is generally more suited for mobile and web applications, while SOAP is better for legacy systems and applications requiring complex features like security and formal service contracts.",
+      },
+      {
+        id: "java-web-services-52",
+        text: "Judge the effectiveness of HTTP status codes.",
+        unit: "4",
+        level: "big answer",
+        answer:
+          "HTTP status codes are vital for effective communication between clients and servers in web services. These codes indicate the outcome of an HTTP request, enabling clients to understand whether their request succeeded, failed, or requires further action. Status codes are divided into five categories: 1xx (Informational), 2xx (Successful), 3xx (Redirection), 4xx (Client errors), and 5xx (Server errors). For instance, a 200 status code means success, 404 indicates a resource was not found, and 500 signals an internal server error. Proper usage of status codes allows for clear error handling, troubleshooting, and helps the client application take appropriate actions based on the response. Additionally, they aid in improving the RESTful API’s reliability and user experience by guiding developers on the next steps to resolve issues.",
+      },
+      {
+        id: "java-web-services-53",
+        text: "Assess security mechanisms in RESTful services.",
+        unit: "4",
+        level: "big answer",
+        answer:
+          "Security in RESTful services is essential to ensure data protection, privacy, and integrity during transmission. Key security mechanisms include HTTPS for secure communication, which ensures data is encrypted during transfer. Authentication methods such as Basic Authentication, OAuth, and JWT (JSON Web Tokens) are used to verify the identity of users and grant access. OAuth is particularly popular in RESTful APIs for authorizing third-party applications without exposing user credentials. For more sensitive data, RESTful services often rely on role-based access control (RBAC) to ensure only authorized users can access certain resources. Additionally, input validation and sanitization prevent common attacks like SQL injection or cross-site scripting (XSS). Rate limiting and logging also help mitigate denial-of-service (DoS) attacks and detect unusual behavior. Properly implementing these security mechanisms is crucial for ensuring the confidentiality, integrity, and availability of data in RESTful web services.",
+      },
+      {
+        id: "java-web-services-54",
+        text: "Evaluate performance of REST over SOAP.",
+        unit: "4",
+        level: "big answer",
+        answer:
+          "REST typically outperforms SOAP due to its lightweight nature and minimal overhead. REST uses simple HTTP methods like GET, POST, PUT, DELETE, and doesn't require extensive XML-based messaging, making it more efficient for web applications and mobile devices. SOAP, on the other hand, involves heavier XML payloads and requires more processing, which can slow down communication, especially in high-performance environments. In addition, SOAP relies on additional protocols (such as WS-Security, WS-ReliableMessaging), which further add to the complexity and overhead. REST’s statelessness also contributes to better scalability since servers don’t need to maintain session information, allowing them to handle more requests concurrently. However, SOAP offers features like security, transactions, and reliability, which may be necessary for enterprise applications. Overall, for most modern, lightweight applications, REST is faster and more efficient, while SOAP is better suited for complex, enterprise-grade systems.",
+      },
+      {
+        id: "java-web-services-55",
+        text: "Review Jersey framework for rapid development.",
+        unit: "4",
+        level: "big answer",
+        answer:
+          "Jersey is a widely used framework for developing RESTful web services in Java. It simplifies the process of building and deploying REST APIs by providing a set of annotations and features that abstract complex aspects of web service development. With Jersey, developers can easily create RESTful services using simple Java classes annotated with JAX-RS annotations such as @Path, @GET, @POST, @Produces, and @Consumes. It also offers automatic marshalling and unmarshalling of Java objects to and from JSON or XML, easing the development process. Jersey supports several advanced features like exception handling, filters, interceptors, and client-side API for making HTTP requests to other services. Its integration with popular tools and libraries, such as Jackson for JSON processing and Hibernate for database interactions, makes it ideal for rapid development. Additionally, Jersey’s robust documentation and active community support speed up the development cycle, making it a preferred choice for building scalable and maintainable RESTful web services.",
+      },
+      {
+        id: "java-web-services-56",
+        text: "Critique a RESTful service implementation.",
+        unit: "4",
+        level: "big answer",
+        answer:
+          "When critiquing a RESTful service implementation, several factors should be evaluated. First, the use of HTTP methods must align with REST principles, ensuring GET is used for data retrieval, POST for creation, PUT for updates, and DELETE for resource deletion. The URI structure should be intuitive and follow RESTful conventions, such as using nouns to represent resources and avoiding actions in URIs. Another key consideration is the consistency of responses, with appropriate HTTP status codes indicating success or failure. Additionally, security mechanisms like HTTPS, authentication, and authorization should be implemented to protect data and ensure only authorized users can access resources. Error handling and input validation are critical to prevent service vulnerabilities and provide meaningful feedback to clients. The scalability and performance of the service should also be assessed, including how well it handles large datasets, rate limiting, and caching. Finally, documentation and testing play a crucial role in ensuring that the service is user-friendly and maintainable.",
+      },
+      {
+        id: "java-web-services-57",
+        text: "Appraise the flexibility of URI structure in REST.",
+        unit: "4",
+        level: "big answer",
+        answer:
+          "The URI structure in REST provides significant flexibility, allowing developers to design APIs that are intuitive, scalable, and easy to maintain. RESTful URIs typically use nouns to represent resources and organize them hierarchically, making it easier for developers to understand and access the service. The flexibility of URI structure allows for clear, simple representations of entities and their relationships, for example, /users/{id} to access specific user data. Additionally, the use of query parameters allows for further refinement, such as filtering or sorting results (/users?age=25&sort=name). The hierarchical nature of RESTful URIs supports the easy addition of new features without breaking existing functionality, promoting backward compatibility. Furthermore, by following established conventions, such as including versioning in the URI (e.g., /v1/users), services can evolve without impacting existing clients. This flexibility enables RESTful services to be adaptable to various use cases while maintaining clarity and ease of navigation.",
+      },
+      {
+        id: "java-web-services-58",
+        text: "Evaluate the impact of exception handling on client experience.",
+        unit: "4",
+        level: "big answer",
+        answer:
+          "Effective exception handling is crucial for ensuring a positive client experience when interacting with web services. Properly handled exceptions allow the service to return meaningful error messages, which help clients understand what went wrong and how to resolve the issue. For example, if a client requests a resource that does not exist, a RESTful service should return a 404 status code along with a descriptive message, indicating that the resource could not be found. Additionally, handling exceptions gracefully ensures that the client application does not crash and can take appropriate actions, such as retrying the request or displaying an error message to the user. Without proper exception handling, clients may encounter ambiguous or generic error responses (e.g., a 500 Internal Server Error), making it difficult to troubleshoot issues. In summary, proper exception handling enhances the client experience by providing transparency, reducing frustration, and improving the overall reliability of the service.",
+      },
+      {
+        id: "java-web-services-59",
+        text: "Compare RESTful principles with traditional web services.",
+        unit: "4",
+        level: "big answer",
+        answer:
+          "RESTful principles prioritize simplicity, statelessness, and scalability, making them highly suitable for modern web applications and mobile services. REST services use HTTP methods like GET, POST, PUT, and DELETE, which are lightweight and easy to implement. The stateless nature of REST ensures that each request is independent, leading to better performance and scalability. REST focuses on exposing resources via URIs and returning representations, often in lightweight formats like JSON or XML. In contrast, traditional web services like SOAP rely on XML-based messaging and more complex protocols, such as WS-Security and WS-ReliableMessaging. SOAP provides more robust support for security, transactions, and reliability, which are critical in enterprise-level applications. However, SOAP services tend to be more rigid and resource-intensive compared to REST. In summary, RESTful services are more agile and performant for modern web applications, while SOAP is better suited for enterprise systems that require advanced security and transactional features.",
+      },
+      {
+        id: "java-web-services-60",
+        text: "Evaluate API design with respect to user needs.",
+        unit: "4",
+        level: "big answer",
+        answer:
+          "API design should be tailored to meet the needs of the user, whether the user is a developer or an end-user application. Key design principles include simplicity, consistency, and clear documentation. The API should be intuitive, with well-structured endpoints, proper HTTP methods, and meaningful status codes that align with user expectations. Developers appreciate APIs that are easy to integrate, offering clear error messages and detailed documentation on how to use the available endpoints. Additionally, the API should be flexible, supporting various data formats like JSON or XML and allowing easy versioning and backward compatibility. Security measures such as authentication and authorization must be easy to implement without hindering user experience. Finally, performance and scalability are crucial for handling growing demands while maintaining responsiveness. In summary, a good API design should anticipate and address user needs, enabling smooth integration and ensuring a seamless experience.",
+      },
+      {
+        id: "spring-1-1",
+        unit: "5",
+        text: "What is Spring MVC?",
+        level: "one liner",
+        answer:
+          "Spring MVC is a framework used to build web applications based on the Model-View-Controller design pattern.",
+      },
+      {
+        id: "spring-1-2",
+        unit: "5",
+        text: "Define Hibernate.",
+        level: "one liner",
+        answer:
+          "Hibernate is an object-relational mapping (ORM) tool that simplifies database interactions for Java applications.",
+      },
+      {
+        id: "spring-1-3",
+        unit: "5",
+        text: "List any two modules of Spring Framework.",
+        level: "one liner",
+        answer:
+          "Two modules of the Spring Framework are Spring Core and Spring Security.",
+      },
+      {
+        id: "spring-1-4",
+        unit: "5",
+        text: "What is the full form of HQL?",
+        level: "one liner",
+        answer: "The full form of HQL is Hibernate Query Language.",
+      },
+      {
+        id: "spring-1-5",
+        unit: "5",
+        text: "Define ORM.",
+        level: "one liner",
+        answer:
+          "ORM (Object-Relational Mapping) is a technique for converting data between incompatible systems, like databases and object-oriented programming languages.",
+      },
+      {
+        id: "spring-1-6",
+        unit: "5",
+        text: "List components of Spring MVC architecture.",
+        level: "one liner",
+        answer:
+          "Components of Spring MVC architecture include Model, View, Controller, DispatcherServlet, and HandlerMapping.",
+      },
+      {
+        id: "spring-1-7",
+        unit: "5",
+        text: "What is the DispatcherServlet?",
+        level: "one liner",
+        answer:
+          "The DispatcherServlet in Spring MVC is the front controller that handles incoming HTTP requests and dispatches them to appropriate handlers.",
+      },
+      {
+        id: "spring-1-8",
+        unit: "5",
+        text: "Define Hibernate configuration file.",
+        level: "one liner",
+        answer:
+          "The Hibernate configuration file (hibernate.cfg.xml) contains Hibernate's connection settings and mappings for database entities.",
+      },
+      {
+        id: "spring-1-9",
+        unit: "5",
+        text: "What is the use of the Controller in Spring MVC?",
+        level: "one liner",
+        answer:
+          "In Spring MVC, the Controller processes user requests, updates the model, and returns the view for rendering.",
+      },
+      {
+        id: "spring-1-10",
+        unit: "5",
+        text: "Define SessionFactory in Hibernate.",
+        level: "one liner",
+        answer:
+          "SessionFactory in Hibernate is responsible for creating and managing Hibernate sessions for interacting with the database.",
+      },
+      {
+        id: "spring-1-11",
+        unit: "5",
+        text: "What is the role of Model in Spring MVC?",
+        level: "one liner",
+        answer:
+          "The Model in Spring MVC holds the data and business logic of the application.",
+      },
+      {
+        id: "spring-1-12",
+        unit: "5",
+        text: "List advantages of Spring MVC.",
+        level: "one liner",
+        answer:
+          "Advantages of Spring MVC include separation of concerns, reusable components, easy testability, and integration with other frameworks.",
+      },
+      {
+        id: "spring-1-13",
+        unit: "5",
+        text: "What is POJO?",
+        level: "one liner",
+        answer:
+          "POJO stands for Plain Old Java Object, which is an ordinary Java object without any special restrictions or requirements.",
+      },
+      {
+        id: "spring-1-14",
+        unit: "5",
+        text: "Define Hibernate Query Language.",
+        level: "one liner",
+        answer:
+          "Hibernate Query Language (HQL) is an object-oriented query language used to query database entities in Hibernate.",
+      },
+      {
+        id: "spring-1-15",
+        unit: "5",
+        text: "What is the role of ViewResolver in Spring?",
+        level: "one liner",
+        answer:
+          "ViewResolver in Spring resolves logical view names returned by controllers into actual view templates.",
+      },
+      {
+        id: "spring-1-16",
+        unit: "5",
+        text: "Define applicationContext.xml.",
+        level: "one liner",
+        answer:
+          "applicationContext.xml is a configuration file in Spring that defines beans and their dependencies for the application.",
+      },
+      {
+        id: "spring-1-17",
+        unit: "5",
+        text: "What is the purpose of @Controller annotation?",
+        level: "one liner",
+        answer:
+          "The @Controller annotation in Spring marks a class as a controller that handles user requests in Spring MVC.",
+      },
+      {
+        id: "spring-1-18",
+        unit: "5",
+        text: "Define @RequestMapping.",
+        level: "one liner",
+        answer:
+          "@RequestMapping in Spring is used to map HTTP requests to handler methods of MVC controllers.",
+      },
+      {
+        id: "spring-1-19",
+        unit: "5",
+        text: "List any two Hibernate annotations.",
+        level: "one liner",
+        answer: "Two Hibernate annotations are @Entity and @Table.",
+      },
+      {
+        id: "spring-1-20",
+        unit: "5",
+        text: "Define hibernate.cfg.xml file.",
+        level: "one liner",
+        answer:
+          "hibernate.cfg.xml is the configuration file in Hibernate that contains database connection details and mapping information.",
+      },
+      {
+        id: "spring-2-1",
+        unit: "5",
+        text: "Explain Spring MVC architecture with a diagram.",
+        level: "one liner",
+        answer:
+          "Spring MVC architecture follows the Model-View-Controller design pattern. The DispatcherServlet acts as the front controller that receives incoming HTTP requests, maps them to appropriate controllers, and returns the response. The Model represents the data, the View is the UI part, and the Controller handles the business logic and interaction between Model and View.",
+      },
+      {
+        id: "spring-2-2",
+        unit: "5",
+        text: "Discuss the flow of a request in Spring MVC.",
+        level: "one liner",
+        answer:
+          "When a request is made, it is intercepted by the DispatcherServlet, which determines which controller should handle the request. The controller processes the request, updates the model, and returns the view name. The ViewResolver then resolves the view, and the view is rendered to the user. The flow is based on the front-controller design pattern.",
+      },
+      {
+        id: "spring-2-3",
+        unit: "5",
+        text: "Explain how Hibernate performs ORM.",
+        level: "one liner",
+        answer:
+          "Hibernate performs ORM by mapping Java objects to database tables. It allows developers to work with Java objects instead of SQL queries. Hibernate manages the conversion between objects and database tables, and it handles operations like saving, updating, and deleting data from the database through the Session and SessionFactory.",
+      },
+      {
+        id: "spring-2-4",
+        unit: "5",
+        text: "Describe the configuration steps in Spring MVC.",
+        level: "one liner",
+        answer:
+          "Configuring Spring MVC involves setting up a DispatcherServlet in the web.xml, defining the application context, setting up component scanning, and configuring view resolvers. You also need to define controllers, models, and views, and possibly configure handler mappings and interceptors.",
+      },
+      {
+        id: "spring-2-5",
+        unit: "5",
+        text: "Explain the advantages of using Hibernate.",
+        level: "one liner",
+        answer:
+          "Advantages of Hibernate include automated object-relational mapping, reduction in boilerplate code, support for multiple database vendors, easy to manage complex relationships, automatic dirty checking, caching for better performance, and built-in transaction management.",
+      },
+      {
+        id: "spring-2-6",
+        unit: "5",
+        text: "Compare Spring MVC and traditional servlet-based development.",
+        level: "one liner",
+        answer:
+          "Spring MVC provides a more modular and flexible approach compared to traditional servlet-based development. While servlet-based development often involves direct management of HTTP requests and responses, Spring MVC separates the concerns of the controller, view, and model, making it easier to manage and test applications.",
+      },
+      {
+        id: "spring-2-7",
+        unit: "5",
+        text: "Describe the role of DispatcherServlet.",
+        level: "one liner",
+        answer:
+          "The DispatcherServlet is the central component in Spring MVC that handles all HTTP requests. It acts as the front controller, routing the requests to the appropriate handlers (controllers) and returning the response. It delegates the actual processing of the request to other components, like the controller, and resolves the view for rendering.",
+      },
+      {
+        id: "spring-2-8",
+        unit: "5",
+        text: "Explain how data flows between model and view in Spring.",
+        level: "one liner",
+        answer:
+          "In Spring MVC, data flows from the controller to the model, which holds business data. The controller updates the model and returns a logical view name. The ViewResolver resolves the view and renders the data. The model data is typically passed to the view using the ModelAndView object or via model attributes.",
+      },
+      {
+        id: "spring-2-9",
+        unit: "5",
+        text: "Describe how annotations are used in Spring MVC.",
+        level: "one liner",
+        answer:
+          "In Spring MVC, annotations like @Controller, @RequestMapping, @ModelAttribute, and @RequestParam are used to simplify configuration and provide a more declarative approach to defining controllers, mappings, and request handling. Annotations allow Spring to automatically configure and wire components without requiring XML configuration.",
+      },
+      {
+        id: "spring-2-10",
+        unit: "5",
+        text: "Discuss the lifecycle of a Hibernate session.",
+        level: "one liner",
+        answer:
+          "The lifecycle of a Hibernate session starts when the SessionFactory opens a session. The session is used to perform database operations like create, read, update, and delete. At the end of the transaction, the session is flushed to the database, and then it is closed, releasing resources. The session is temporary and specific to the transaction.",
+      },
+      {
+        id: "spring-3-31",
+        unit: "5",
+        text: "Create a Spring MVC application to manage student records.",
+        level: "two liner",
+        answer:
+          "To create a Spring MVC application for managing student records, you need to set up a controller to handle student CRUD operations, use a service layer for business logic, and integrate a data access layer (e.g., Hibernate) for database interaction. You also need to create views for displaying and inputting student data.",
+      },
+      {
+        id: "spring-3-32",
+        unit: "5",
+        text: "Implement a Hibernate entity class for a customer.",
+        level: "two liner",
+        answer:
+          "To implement a Hibernate entity class for a customer, annotate the class with @Entity, @Table, and @Id for the primary key. Use @Column annotations to map properties to the database columns and configure the session factory to manage entity persistence.",
+      },
+      {
+        id: "spring-3-33",
+        unit: "5",
+        text: "Configure Hibernate using annotation-based configuration.",
+        level: "two liner",
+        answer:
+          "In annotation-based configuration, you use @Entity, @Table, and @Id annotations in the entity class, and configure the SessionFactory bean in a Spring configuration file with properties like database URL, username, and dialect. Hibernate's annotation-based configuration simplifies XML configuration.",
+      },
+      {
+        id: "spring-3-34",
+        unit: "5",
+        text: "Apply Hibernate to insert data into a database.",
+        level: "two liner",
+        answer:
+          "To insert data into a database using Hibernate, create a session, begin a transaction, save the entity using session.save(), and commit the transaction. Finally, close the session to release resources.",
+      },
+      {
+        id: "spring-3-35",
+        unit: "5",
+        text: "Build a simple Spring controller to process a web form.",
+        level: "two liner",
+        answer:
+          "To build a simple Spring controller, define a method with @RequestMapping to handle the form submission. Bind form data to a model object and return the appropriate view for displaying the result or a success message.",
+      },
+      {
+        id: "spring-3-36",
+        unit: "5",
+        text: "Configure a Spring application context XML file.",
+        level: "two liner",
+        answer:
+          "In the Spring application context XML file, define beans for components such as data sources, service layers, controllers, and other dependencies. Use <bean> tags to configure and wire the components within the Spring container.",
+      },
+      {
+        id: "spring-3-37",
+        unit: "5",
+        text: "Create a Hibernate mapping file for employee entity.",
+        level: "two liner",
+        answer:
+          "To create a Hibernate mapping file for an employee entity, use the <hibernate-mapping> tag to map the entity class to a database table. Define <class> for the entity and <id>, <property>, and <many-to-one> for mapping properties to database columns.",
+      },
+      {
+        id: "spring-3-38",
+        unit: "5",
+        text: "Develop a web form using Spring MVC and bind it with a model.",
+        level: "two liner",
+        answer:
+          "In Spring MVC, create a form using HTML and bind it to a model object using the @ModelAttribute annotation. Use @RequestMapping in the controller to handle form submissions and pass the model data to the view.",
+      },
+      {
+        id: "spring-3-39",
+        unit: "5",
+        text: "Use HQL to fetch all records from a table.",
+        level: "two liner",
+        answer:
+          "In Hibernate Query Language (HQL), to fetch all records from a table, use the query 'from EntityName' where EntityName is the class name mapped to the table. Execute this query via session.createQuery() and fetch the results.",
+      },
+      {
+        id: "spring-3-40",
+        unit: "5",
+        text: "Apply @RequestMapping to handle different request paths.",
+        level: "two liner",
+        answer:
+          "@RequestMapping in Spring is used to map HTTP requests to specific controller methods. You can specify request paths, methods (GET, POST), and parameters to handle different URL patterns and actions in the application.",
+      },
+      {
+        id: "spring-4-41",
+        unit: "5",
+        text: "Analyze the difference between Hibernate and JDBC.",
+        level: "two liner",
+        answer:
+          "Hibernate provides a higher-level abstraction over JDBC, reducing boilerplate code and automatically handling object-relational mapping (ORM), while JDBC requires manual handling of database connections, SQL queries, and result sets. Hibernate simplifies database interactions and improves productivity.",
+      },
+      {
+        id: "spring-4-42",
+        unit: "5",
+        text: "Examine how Spring MVC handles requests.",
+        level: "two liner",
+        answer:
+          "Spring MVC handles requests through the DispatcherServlet, which acts as a front controller to route requests to appropriate handler methods in the controller. These methods process the request, interact with models, and return a view that is resolved by the ViewResolver.",
+      },
+      {
+        id: "spring-4-43",
+        unit: "5",
+        text: "Compare Hibernate XML and annotation-based mapping.",
+        level: "two liner",
+        answer:
+          "Hibernate XML mapping requires manually defining mappings in an XML configuration file, while annotation-based mapping uses annotations within the entity class to define relationships between the object and the database. Annotations offer a more concise and less error-prone approach.",
+      },
+      {
+        id: "spring-4-44",
+        unit: "5",
+        text: "Break down the role of each component in Spring MVC.",
+        level: "two liner",
+        answer:
+          "In Spring MVC, the DispatcherServlet handles incoming requests, controllers process business logic, models hold data, and views render the data. The ViewResolver helps map views, and the HandlerMapping directs requests to the appropriate controller.",
+      },
+      {
+        id: "spring-4-45",
+        unit: "5",
+        text: "Distinguish between HQL and SQL.",
+        level: "two liner",
+        answer:
+          "HQL (Hibernate Query Language) is object-oriented and operates on entity objects, while SQL (Structured Query Language) is a relational database query language. HQL abstracts database-specific details and works with Java classes, whereas SQL works directly with database tables.",
+      },
+      {
+        id: "spring-4-46",
+        unit: "5",
+        text: "Identify key differences between ORM and non-ORM techniques.",
+        level: "two liner",
+        answer:
+          "ORM (Object-Relational Mapping) automatically maps Java objects to database tables, simplifying database interactions and eliminating the need for manual SQL queries. Non-ORM techniques require developers to write SQL queries and handle object persistence manually.",
+      },
+      {
+        id: "spring-4-47",
+        unit: "5",
+        text: "Analyze advantages of integrating Spring and Hibernate.",
+        level: "two liner",
+        answer:
+          "Integrating Spring with Hibernate combines Spring's dependency injection and transaction management with Hibernate's ORM capabilities, simplifying database operations, improving scalability, and reducing boilerplate code in enterprise applications.",
+      },
+      {
+        id: "spring-4-48",
+        unit: "5",
+        text: "Compare performance of Spring MVC with traditional frameworks.",
+        level: "two liner",
+        answer:
+          "Spring MVC offers better modularity, testability, and flexibility compared to traditional frameworks. It allows easier configuration and greater separation of concerns, leading to improved performance, scalability, and maintainability.",
+      },
+      {
+        id: "spring-4-49",
+        unit: "5",
+        text: "Analyze how Spring reduces boilerplate code.",
+        level: "two liner",
+        answer:
+          "Spring reduces boilerplate code through features like dependency injection, annotations, and declarative transaction management. This eliminates the need for verbose configuration and simplifies application development and maintenance.",
+      },
+      {
+        id: "spring-4-50",
+        unit: "5",
+        text: "Identify challenges in configuring Hibernate.",
+        level: "two liner",
+        answer:
+          "Challenges in configuring Hibernate include setting up the session factory, configuring database connections, and ensuring proper mapping between Java classes and database tables. Incorrect configuration can lead to issues like connection leaks or incorrect query execution.",
+      },
+      {
+        id: "spring-5-51",
+        unit: "5",
+        text: "Evaluate the effectiveness of Spring MVC in web development.",
+        level: "big answer",
+        answer:
+          "Spring MVC is highly effective in web development due to its robust features such as separation of concerns, modular architecture, and flexibility in configuration. The framework allows developers to create loosely coupled applications by integrating different components such as controllers, views, and models. Its use of the DispatcherServlet as a central point of control for requests provides a clean structure for handling HTTP requests and responses. Spring MVC's powerful data-binding capabilities allow seamless integration between forms, models, and views. Additionally, its integration with various view technologies (JSP, Thymeleaf, etc.) and its support for RESTful APIs make it adaptable for a wide range of web applications. With a strong emphasis on testability and scalability, Spring MVC is well-suited for both small and large web applications, and its widespread community support and documentation make it an excellent choice for modern web development.",
+      },
+      {
+        id: "spring-5-52",
+        unit: "5",
+        text: "Judge the pros and cons of annotation-based configuration in Spring.",
+        level: "big answer",
+        answer:
+          "Annotation-based configuration in Spring offers several advantages, such as reduced boilerplate code and increased readability by eliminating the need for verbose XML configurations. With annotations like @Autowired, @Component, @Service, and @Controller, developers can easily define beans and manage dependencies. It enhances the developer's productivity, as the configuration is explicit and concise. Additionally, it supports the use of Java-based configuration, which can be refactored more easily than XML. However, there are some drawbacks. For large projects, annotation-based configuration can lead to a cluttered codebase, with annotations scattered throughout, making it difficult to trace dependencies. Also, while annotations reduce configuration complexity, they may introduce tight coupling to the Spring framework, which can affect portability across different environments. Debugging issues related to annotation-based configuration can also be more challenging compared to XML, where dependencies are more visible and easier to inspect.",
+      },
+      {
+        id: "spring-5-53",
+        unit: "5",
+        text: "Assess the performance of Hibernate in large-scale applications.",
+        level: "big answer",
+        answer:
+          "Hibernate provides powerful ORM capabilities, but its performance in large-scale applications depends heavily on how it is configured and used. One of the major performance concerns with Hibernate is the overhead of managing session and transaction handling, especially when dealing with large datasets or complex queries. To ensure optimal performance, caching strategies such as first-level and second-level caches should be properly configured. Additionally, Hibernate's lazy loading feature can help improve performance by loading data only when needed, but care must be taken to avoid N+1 query problems. Hibernate can also struggle with complex joins and subqueries, where the SQL equivalent might be more efficient. In large-scale applications, it is crucial to use strategies like batch processing, lazy loading, and pagination to handle performance bottlenecks. Additionally, optimizing the database schema, proper indexing, and query optimization are essential for maintaining good performance in a large-scale environment.",
+      },
+      {
+        id: "spring-5-54",
+        unit: "5",
+        text: "Critique Spring MVC in terms of modularity and maintainability.",
+        level: "big answer",
+        answer:
+          "Spring MVC is highly modular and maintainable due to its emphasis on separation of concerns and the ability to easily integrate various components such as controllers, services, and views. The framework allows developers to create loosely coupled components, making it easier to maintain and extend applications. Controllers handle user input, services contain business logic, and views handle user interface, making the architecture clean and modular. Additionally, Spring MVC's flexible configuration options allow developers to choose the best solutions for their specific use case, such as different view technologies and data-binding mechanisms. One of the challenges, however, is that Spring MVC applications can become complex as the application grows. Managing dependencies, configurations, and multiple layers of abstraction may become cumbersome. To mitigate this, Spring's dependency injection and Spring Boot's auto-configuration provide simplification, but the complexity of the overall system can still pose challenges as applications scale.",
+      },
+      {
+        id: "spring-5-55",
+        unit: "5",
+        text: "Compare different approaches of Hibernate configuration.",
+        level: "big answer",
+        answer:
+          "Hibernate offers three primary approaches for configuration: XML-based configuration, annotation-based configuration, and Java-based configuration. XML-based configuration involves creating a hibernate.cfg.xml file where the database connection properties, session factory, and mapping files are declared. This approach is more verbose and less flexible but offers better separation between configuration and code. The annotation-based configuration is more concise and often preferred for Java-based applications. It involves annotating entity classes with @Entity, @Table, and other annotations to map them to database tables, and it reduces the need for an external XML configuration file. The Java-based configuration uses @Configuration annotated classes and Java beans to configure Hibernate, providing the flexibility of Java code and avoiding the need for XML files altogether. It’s a more modern approach that fits well with Spring's emphasis on Java-based configuration. Each configuration style has its pros and cons, with XML being more traditional and flexible but cumbersome, annotations providing a clean and minimalistic approach, and Java-based configuration offering the best integration with the rest of the Spring framework.",
+      },
+      {
+        id: "spring-5-56",
+        unit: "5",
+        text: "Evaluate security concerns in Spring MVC applications.",
+        level: "big answer",
+        answer:
+          "Security concerns in Spring MVC applications include issues related to authentication, authorization, input validation, and preventing common attacks like CSRF, XSS, and SQL injection. Spring Security is a widely used module to address authentication and authorization concerns. It offers built-in support for form-based authentication, LDAP, OAuth, and other security protocols. Cross-Site Request Forgery (CSRF) is a major concern, and Spring Security provides built-in mechanisms to prevent it, such as token-based validation. Additionally, input validation and output escaping are crucial to mitigate Cross-Site Scripting (XSS) attacks. Secure coding practices, such as parameterized queries to avoid SQL injection, are essential in any Spring MVC application. Another security concern is session management, which must be configured properly to prevent session fixation or session hijacking. Spring MVC also supports role-based access control, enabling fine-grained authorization for different parts of the application. Overall, while Spring MVC provides strong support for securing web applications, developers need to be proactive in configuring security features and following best practices.",
+      },
+      {
+        id: "spring-5-57",
+        unit: "5",
+        text: "Review best practices in Hibernate mapping.",
+        level: "big answer",
+        answer:
+          "Best practices in Hibernate mapping include using lazy loading for large datasets to minimize memory usage, using proper indexing and batch processing for performance, and employing cascading for object relationships to automate persistence. It is important to use annotations like @Entity, @Table, @Id, and @Column to map the Java objects to database tables, reducing the need for verbose XML configurations. Furthermore, it is recommended to avoid the N+1 problem by configuring Hibernate's fetch strategy, especially for one-to-many relationships. For more complex relationships, consider using the @ManyToMany annotation, ensuring that appropriate join tables are configured. Additionally, Hibernate's second-level cache should be used to improve performance for read-heavy applications by reducing database hits. Mapping inheritance hierarchies using @InheritanceType annotations also allows for effective handling of different types of entities in a unified manner. Finally, configuring proper transaction management and using the @Transactional annotation helps ensure data integrity and consistency.",
+      },
+      {
+        id: "spring-5-58",
+        unit: "5",
+        text: "Appraise testability in Spring MVC applications.",
+        level: "big answer",
+        answer:
+          "Spring MVC applications are highly testable due to the framework’s modularity and the use of dependency injection, which allows for easy mocking of dependencies during unit testing. Spring provides support for both unit testing and integration testing through frameworks like JUnit and TestNG, along with Spring Test and Spring MVC Test for simulating HTTP requests and testing controller logic. The use of the @WebAppConfiguration and @MockBean annotations allows developers to test controllers and services in isolation or within the context of a Spring application. Additionally, Spring Boot simplifies testing by providing embedded servers and test-specific configurations. One challenge, however, is the need to set up an appropriate testing environment for integration testing, as interactions between components may require complex configurations, such as embedded databases or mock services. Nonetheless, Spring MVC's emphasis on modularity and the use of interfaces makes it relatively easy to write and execute tests, improving maintainability and stability of the application.",
+      },
+      {
+        id: "spring-5-59",
+        unit: "5",
+        text: "Assess the usability of HQL over native SQL.",
+        level: "big answer",
+        answer:
+          "HQL (Hibernate Query Language) provides several advantages over native SQL, including database independence, better integration with Java objects, and more maintainable code. Since HQL operates on entity objects rather than directly on database tables, it abstracts away database-specific details, making the application more portable across different database systems. Additionally, HQL allows for more intuitive handling of object-oriented relationships, enabling developers to query and manipulate objects directly, rather than having to write complex joins or manually map relational data. On the downside, HQL can be less efficient than native SQL for certain complex queries, as it adds an additional layer of abstraction. In cases where complex joins or advanced SQL features are needed, native SQL might provide better performance. However, Hibernate allows for hybrid queries where HQL can be used for most operations and native SQL for complex or performance-critical parts of the application.",
+      },
+      {
+        id: "spring-5-60",
+        unit: "5",
+        text: "Evaluate the advantages of using Spring MVC for REST API development.",
+        level: "big answer",
+        answer:
+          "Spring MVC offers several advantages for REST API development, including its ease of integration with Spring Boot, which simplifies the creation of standalone, production-grade applications. The framework supports RESTful principles with clean and simple URL mapping, providing a clear separation of concerns between resources and actions. Spring MVC’s @RestController annotation automatically serializes objects into JSON or XML, which is ideal for REST APIs. The framework also supports a wide range of HTTP methods (GET, POST, PUT, DELETE), and can easily map these to Java methods using annotations like @GetMapping, @PostMapping, etc. Additionally, Spring MVC integrates seamlessly with Spring Security, allowing developers to secure REST endpoints. Its comprehensive exception handling system, through @ExceptionHandler or @ControllerAdvice, helps in providing meaningful error messages. Moreover, Spring MVC has excellent support for input validation, pagination, and sorting, which are commonly required in REST APIs. Overall, Spring MVC provides a solid and flexible foundation for developing RESTful web services.",
+      },
     ],
   },
 ];

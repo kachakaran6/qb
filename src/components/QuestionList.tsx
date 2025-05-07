@@ -47,105 +47,107 @@ const QuestionList: React.FC<QuestionListProps> = ({
   });
 
   return (
-    <div className="bg-white rounded-xl shadow-sm h-full overflow-hidden border border-slate-200">
-      <div className="bg-gradient-to-r from-black via-purple-800 to-indigo-900 px-4 py-3">
+    <div className="bg-white rounded-xl shadow-md border border-slate-200 h-full overflow-hidden">
+      {/* Header */}
+      <div className="bg-gradient-to-r from-black via-purple-800 to-indigo-900 px-6 py-4">
         <h2 className="text-lg font-semibold text-white flex items-center">
           <HelpCircle className="mr-2 h-5 w-5" />
           {subjectName} Questions
         </h2>
       </div>
 
-      {/* Unit selection dropdown */}
-      <div className="p-4">
-        <h3 className="text-lg font-semibold">Select Unit:</h3>
-        <select
-          value={selectedUnit || "1"}
-          onChange={(e) => handleUnitSelect(e.target.value)}
-          className="px-4 py-2 mt-2 rounded-md border border-indigo-600"
-        >
-          <option value="">Select Unit </option>
-          <option value="1">Unit 1</option>
-          <option value="2">Unit 2</option>
-          {/* Add more units as needed */}
-        </select>
-      </div>
-
-      {/* If no level is selected, show level selection options */}
-      {selectedLevel === null ? (
-        <div className="p-4">
-          <h3 className="text-lg font-semibold">Select Question Level:</h3>
-          <div className="flex gap-4 mt-4">
-            <button
-              onClick={() => handleLevelSelect("one liner")}
-              className={`px-4 py-2 rounded-md ${
-                selectedLevel === "one liner"
-                  ? "bg-indigo-700 text-white"
-                  : "bg-indigo-600 text-white"
-              } hover:bg-indigo-700`}
-            >
-              1-2 Marks Questions
-            </button>{" "}
-            <button
-              onClick={() => handleLevelSelect("two liner")}
-              className={`px-4 py-2 rounded-md ${
-                selectedLevel === "two liner"
-                  ? "bg-indigo-700 text-white"
-                  : "bg-indigo-600 text-white"
-              } hover:bg-indigo-700`}
-            >
-              2-3 Marks Questions
-            </button>
-            <button
-              onClick={() => handleLevelSelect("big answer")}
-              className={`px-4 py-2 rounded-md ${
-                selectedLevel === "big answer"
-                  ? "bg-indigo-700 text-white"
-                  : "bg-indigo-600 text-white"
-              } hover:bg-indigo-700`}
-            >
-              5 Marks Questions
-            </button>
-          </div>
-        </div>
-      ) : (
-        // Display questions based on selected level and unit
+      {/* Selection Area */}
+      <div className="p-6 space-y-6">
+        {/* Unit Selector */}
         <div>
-          <div className="flex justify-end p-4">
+          <label className="block text-lg font-semibold text-slate-900 mb-2">
+            Select Unit:
+          </label>
+          <select
+            value={selectedUnit || ""}
+            onChange={(e) => handleUnitSelect(e.target.value)}
+            className="w-full px-4 py-2 rounded-md border border-indigo-600 bg-white text-slate-800 hover:border-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >
+            <option value="">Select Unit</option>
+            <option value="1">Unit 1</option>
+            <option value="2">Unit 2</option>
+            <option value="3">Unit 3</option>
+            <option value="4">Unit 4</option>
+            <option value="5">Unit 5</option>
+            {/* Add more units */}
+          </select>
+        </div>
+
+        {/* Level Selector or Reset Link */}
+        {selectedLevel === null ? (
+          <div>
+            <label className="block text-lg font-semibold text-slate-900 mb-4">
+              Select Question Level:
+            </label>
+            <div className="flex flex-wrap gap-4">
+              <button
+                onClick={() => handleLevelSelect("one liner")}
+                className="px-4 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-700 transition-colors duration-300"
+              >
+                1-2 Marks Questions
+              </button>
+              <button
+                onClick={() => handleLevelSelect("two liner")}
+                className="px-4 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-700 transition-colors duration-300"
+              >
+                2-3 Marks Questions
+              </button>
+              <button
+                onClick={() => handleLevelSelect("big answer")}
+                className="px-4 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-700 transition-colors duration-300"
+              >
+                5 Marks Questions
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="flex justify-between items-center">
+            <span className="text-slate-800 font-medium">
+              Questions for Unit {selectedUnit} - {selectedLevel}
+            </span>
             <button
               onClick={() => {
                 setSelectedLevel(null);
-                setSelectedUnit(null); // Reset both level and unit selections
+                setSelectedUnit(null);
               }}
-              className="text-indigo-600 hover:text-indigo-800"
+              className="text-indigo-600 hover:text-indigo-800 font-semibold"
             >
-              Reset Level and Unit Selection
+              Reset Level and Unit
             </button>
           </div>
+        )}
+      </div>
 
+      {/* Questions List */}
+      {selectedLevel !== null && (
+        <div className="divide-y divide-slate-100 overflow-y-auto max-h-[calc(100vh-280px)] sm:max-h-[600px]">
           {filteredQuestions.length > 0 ? (
-            <div className="divide-y divide-slate-100 overflow-y-auto max-h-[calc(100vh-280px)] sm:max-h-[600px]">
-              {filteredQuestions.map((question) => (
-                <button
-                  key={question.id}
-                  className={`w-full text-left transition-colors p-4 hover:bg-slate-50 ${
+            filteredQuestions.map((question) => (
+              <button
+                key={question.id}
+                className={`w-full text-left p-4 transition-colors hover:bg-slate-50 ${
+                  activeQuestion === question.id
+                    ? "bg-blue-50 border-l-4 border-blue-600"
+                    : ""
+                }`}
+                onClick={() => onSelectQuestion(question.id)}
+              >
+                <p
+                  className={`${
                     activeQuestion === question.id
-                      ? "bg-blue-50 border-l-4 border-blue-600"
-                      : ""
+                      ? "text-blue-700 font-semibold"
+                      : "text-slate-900"
                   }`}
-                  onClick={() => onSelectQuestion(question.id)}
                 >
-                  <p
-                    className={`${
-                      activeQuestion === question.id
-                        ? "text-blue-700"
-                        : "text-slate-900"
-                    }`}
-                  >
-                    {question.text}
-                  </p>
-                </button>
-              ))}
-            </div>
+                  {question.text}
+                </p>
+              </button>
+            ))
           ) : (
             <div className="flex items-center justify-center h-full p-8 text-slate-500">
               No questions available for this unit and level.
