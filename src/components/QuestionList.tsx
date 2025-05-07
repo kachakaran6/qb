@@ -15,8 +15,9 @@ const QuestionList: React.FC<QuestionListProps> = ({
   onSelectQuestion,
   subjectName,
 }) => {
-  // State for selected difficulty level
+  // State for selected difficulty level and unit
   const [selectedLevel, setSelectedLevel] = useState<string | null>(null);
+  const [selectedUnit, setSelectedUnit] = useState<string | null>(null);
 
   // Handle level selection or reset
   const handleLevelSelect = (level: string) => {
@@ -27,10 +28,23 @@ const QuestionList: React.FC<QuestionListProps> = ({
     }
   };
 
-  // Filter questions based on selected level
-  const filteredQuestions = selectedLevel
-    ? questions.filter((question) => question.level === selectedLevel)
-    : questions; // If no level is selected, show all questions
+  // Handle unit selection or reset
+  const handleUnitSelect = (unit: string) => {
+    if (selectedUnit === unit) {
+      setSelectedUnit(null); // If the same unit is selected, reset the filter
+    } else {
+      setSelectedUnit(unit); // Otherwise, select the new unit
+    }
+  };
+
+  // Filter questions based on selected level and unit
+  const filteredQuestions = questions.filter((question) => {
+    const matchesLevel = selectedLevel
+      ? question.level === selectedLevel
+      : true;
+    const matchesUnit = selectedUnit ? question.unit === selectedUnit : true;
+    return matchesLevel && matchesUnit;
+  });
 
   return (
     <div className="bg-white rounded-xl shadow-sm h-full overflow-hidden border border-slate-200">
@@ -39,6 +53,21 @@ const QuestionList: React.FC<QuestionListProps> = ({
           <HelpCircle className="mr-2 h-5 w-5" />
           {subjectName} Questions
         </h2>
+      </div>
+
+      {/* Unit selection dropdown */}
+      <div className="p-4">
+        <h3 className="text-lg font-semibold">Select Unit:</h3>
+        <select
+          value={selectedUnit || "1"}
+          onChange={(e) => handleUnitSelect(e.target.value)}
+          className="px-4 py-2 mt-2 rounded-md border border-indigo-600"
+        >
+          <option value="">Select Unit </option>
+          <option value="1">Unit 1</option>
+          <option value="2">Unit 2</option>
+          {/* Add more units as needed */}
+        </select>
       </div>
 
       {/* If no level is selected, show level selection options */}
@@ -79,19 +108,22 @@ const QuestionList: React.FC<QuestionListProps> = ({
           </div>
         </div>
       ) : (
-        // Display questions based on selected level
+        // Display questions based on selected level and unit
         <div>
           <div className="flex justify-end p-4">
             <button
-              onClick={() => setSelectedLevel(null)} // Button to reset level selection
+              onClick={() => {
+                setSelectedLevel(null);
+                setSelectedUnit(null); // Reset both level and unit selections
+              }}
               className="text-indigo-600 hover:text-indigo-800"
             >
-              Reset Level Selection
+              Reset Level and Unit Selection
             </button>
           </div>
 
           {filteredQuestions.length > 0 ? (
-            <div className="divide-y divide-slate-100 max-h-[600px] overflow-y-auto">
+            <div className="divide-y divide-slate-100 overflow-y-auto max-h-[calc(100vh-280px)] sm:max-h-[600px]">
               {filteredQuestions.map((question) => (
                 <button
                   key={question.id}
@@ -116,7 +148,7 @@ const QuestionList: React.FC<QuestionListProps> = ({
             </div>
           ) : (
             <div className="flex items-center justify-center h-full p-8 text-slate-500">
-              No questions available for this level.
+              No questions available for this unit and level.
             </div>
           )}
         </div>
