@@ -86,19 +86,19 @@ const QuestionList: React.FC<QuestionListProps> = ({
             </label>
             <div className="flex flex-wrap gap-4">
               <button
-                onClick={() => handleLevelSelect("one liner")}
+                onClick={() => handleLevelSelect("1 Marks")}
                 className="px-4 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-700 transition-colors duration-300"
               >
-                1-2 Marks Questions
+                1 Marks Questions
               </button>
               <button
-                onClick={() => handleLevelSelect("two liner")}
+                onClick={() => handleLevelSelect("3 Marks")}
                 className="px-4 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-700 transition-colors duration-300"
               >
-                2-3 Marks Questions
+                3 Marks Questions
               </button>
               <button
-                onClick={() => handleLevelSelect("big answer")}
+                onClick={() => handleLevelSelect("5 Marks")}
                 className="px-4 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-700 transition-colors duration-300"
               >
                 5 Marks Questions
@@ -108,7 +108,8 @@ const QuestionList: React.FC<QuestionListProps> = ({
         ) : (
           <div className="flex justify-between items-center">
             <span className="text-slate-800 font-medium">
-              Questions for Unit {selectedUnit} - {selectedLevel}
+              Questions for Unit {selectedUnit} <br />
+              {selectedLevel}
             </span>
             <button
               onClick={() => {
